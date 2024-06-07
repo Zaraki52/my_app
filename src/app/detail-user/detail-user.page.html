@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+ <ion-toolbar>
+    <ion-buttons slot="start">
+     <ion-back-button defaultHref="/"></ion-back-button> 
+    </ion-buttons>
+    </ion-toolbar>
+
+</ion-header>
+<ion-content>
+  
+  <ion-toolbar>
+    <ion-title>{{name}}</ion-title>
+  </ion-toolbar>
+<ion-card>
+<!-- <img alt="Silhouette of mountains" [src]="image" /> -->
+
+<img *ngIf="image" [src]="'http://localhost:3000' + image" />
+
+<ion-card-content>
+{{description}}
+</ion-card-content>
+
+</ion-card>
+</ion-content>
